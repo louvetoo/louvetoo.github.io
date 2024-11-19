@@ -1,0 +1,155 @@
+@font-face{
+    font-family:"PicNic" ;
+    src: url(webfonts/PicNic.woff2)format("woff2"),
+      url(webfonts/PicNic.woff)format("woff");
+     }
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .sticky a {
+        font-family:"PicNic";
+        font-size: 20px;
+        text-decoration: none;
+        color: #333;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .sticky img {
+        margin-right: 5px;
+      }
+    
+    .intro {
+    
+        font-family:"sztos-variable",sans-serif;
+    font-variation-settings: 'wght' 200, 'wdth' 200;
+        src: url();
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 450;
+        color: rgb(0, 0, 0);
+    }
+    
+    .accueil{
+        color: rgb(0, 0, 0);
+        text-decoration: none
+    }
+    .bis{
+       
+        align-self: center;
+        justify-self: center;
+        width: 50%;
+        
+    }
+    
+    .start {
+        text-align: left;
+        padding: 12px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        font-family:"sztos-variable",sans-serif;
+        font-variation-settings: 'wght' 200, 'wdth' 200;
+    }
+    
+    .vamp {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    
+        grid-gap: 5px;
+        margin: 10px;
+    
+    }
+    
+    img,
+    video,
+    gif {
+        max-width: 100%;
+    }
+    
+    
+    .footer {
+        text-decoration: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+        padding: 4px;
+        text-align: center;
+        font-family:"sztos-variable",sans-serif;
+        font-variation-settings: 'wght' 200, 'wdth' 200;
+        font-size: 18px;
+    }
+    .insta{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .mail{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .eva{
+        
+        color: rgb(0, 0, 0);
+       
+    }
+    
+    p{
+        font-family:"sztos-variable",sans-serif;
+        font-variation-settings: 'wght' 200, 'wdth' 200;
+        font-weight: 200;
+    }
+    
+    
+    .vamp1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    
+    }
+    
+    .vamp2 {
+        grid-column: 2 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .vamp3 {
+        grid-column: 1/ 2;
+        grid-row: 4 / 5;
+       
+    
+    }
+    
+    .vamp4 {
+        grid-column:2/ 2;
+        grid-row: 4 / 5;
+    }
+      
+    .rotating-image {
+        animation: rotate 8s linear infinite;
+        transform-origin: center;
+      }
+      
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
