@@ -10,7 +10,7 @@ img {
 /* IMAGE DE FOND FIXE */
 .background-dog {
    position: fixed;
-  bottom: 20px;
+  bottom: 25px;
   right: 30px;
   width: 100px;
   height: auto;
