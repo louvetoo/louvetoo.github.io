@@ -1,18 +1,13 @@
+body {
+  cursor: url('images/curseur.svg') 16 16, auto;
 }
-body{
-cursor: url('images/curseur.svg') 16 16, auto;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-h1{
-   font-family: "monotalic-narrow", sans-serif;
-font-weight: 700;
-font-style: normal;
-    text-align: left;
-    font-size: medium;
-    margin-top: 3vw;
-    margin-left: 1px;
-    line-height: 0.8;
-    color: rgb(0, 0, 0);
-}
+
+/* IMAGE DE FOND FIXE */
 .background-dog {
   position: fixed;
   top: 0;
@@ -23,16 +18,30 @@ font-style: normal;
   z-index: -10;
   pointer-events: none;
 }
-.intro{
+
+/* TITRE */
+h1 {
+  font-family: "monotalic-narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  font-size: 20vw;
+  margin-top: 3vw;
+  margin-left: 1px;
+  line-height: 0.8;
+  color: black;
+}
+
+
+/* INTRO */
+.intro {
   font-family: "parabolica", sans-serif;
-font-weight: 400;
-font-style: normal;
-    text-decoration: none;
-    display: grid;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 10px;
-    color:  rgb(0, 0, 0);
+  font-weight: 400;
+  display: grid;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: black;
 }
 
 .start {
@@ -40,122 +49,32 @@ font-style: normal;
   padding: 12px;
   margin-bottom: 30px;
   margin-left: 100px;
-  text-decoration: none;
-}
-label.label>*{
-  font-weight: 280;
-  font-size: 20px;
-
 }
 
 
-.projets,.domaine,.numero{
-  font-size: 16px;
-  font-size: clamp(16px,4vw,25px);
-}
-
-.projets {
-  text-align: left;
-  padding: 20px;
-  font-family:"parabolica",sans-serif;
-  margin: 10px;
-  color: rgb(0, 0, 0);
-
-  font-weight: 450;
-  text-wrap:nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.domaine{
-  text-align: left;
-  padding: 20px;
-  font-family:"parabolica",sans-serif;
-  margin: 10px;
-  color: rgb(0, 0, 0);
-  font-weight:450;
-}
-
-
-.numero {
-      text-align: right;
-      padding: 20px;
-      margin: 10px;
-      color: rgb(0, 0, 0);
-      font-weight: 450;
-      font-family: "PicNic"
-  }
-  .rotating-image {
-    animation: rotate 3s linear infinite;
-    transform-origin: center;
-  }
-  
-  @keyframes rotate{
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    } }
-img{
-    max-width: 100%;
-    height: auto;
-}
-.lien{
-  text-decoration: none;
-}
-.index .grid{
-    display: grid;
-    max-width: 1280px;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-content:center;
-    gap: 20px;
-}
-  .div{
-    display: block;
-    unicode-bidi: isolate;
-}
+/* PROJETS */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 220px 100px;
-  margin: 10px;
-  font-family:"parabolica",sans-serif;
-  text-align: left;
-  border-bottom: 0.5px solid  rgb(0, 0, 0);
-  text-decoration: none;
-  color:  rgb(0, 0, 0);
-  margin: 0 15px;
-  font-size: 15px;
-  transition: 0.4s;
+  grid-template-columns: 1fr 100px 50px;
   align-items: center;
-}
-a {
-  text-decoration: none;
-  color:rgb(0, 0, 0);
-}
-.label{
-  display: grid;
-  grid-template-columns: 1fr 220px 100px;
-  margin: 10px;
-  font-family: "parabolica",sans-serif;
-  text-align: left;
-  border-bottom: 0.5px solid rgb(0, 0, 0);
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  margin: 15px;
-  font-size: 30px;
-  transition: 0.4s;
-  align-items: center;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 100px;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  padding: 10px;
   position: relative;
   overflow: hidden;
+  margin: 0 5px;
+  padding: 10px;
+  font-family: "parabolica", sans-serif;
+  text-align: left;
+  border-bottom: 0.5px solid black;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.index .grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  gap: 20px;
 }
 
 .grid .hover-image {
@@ -165,45 +84,103 @@ a {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.3s;
   object-fit: cover;
+  transition: opacity 0.3s;
   z-index: -1;
 }
 
 .grid:hover .hover-image {
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 .grid span {
   position: relative;
   z-index: 1;
 }
-h1 {
-  font-size: 20vw;
-}
 
-.intro {
-  font-size: 13px;
+.projets,
+.domaine,
+.numero {
+  color: black;
 }
 
 .projets {
+  font-family: "parabolica", sans-serif;
+  font-weight: 450;
   font-size: 25px;
   padding: 8px;
+  margin: 10px;
+  text-align: left;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.grid {
-  grid-template-columns: 1fr 100px 50px;
-  font-size: 12px;
-  margin: 0 5px;
+.domaine {
+  font-family: "parabolica", sans-serif;
+  font-weight: 450;
+  padding: 20px;
+  margin: 10px;
 }
 
-.label {
-  grid-template-columns: 1fr 100px 50px;
+.numero {
+  font-family: "PicNic";
+  font-weight: 450;
+  text-align: right;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+/* IMAGE ROTATIVE */
+.rotating-image {
+  animation: rotate 4s linear infinite;
+  transform-origin: center;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* LIENS */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.lien {
+  text-decoration: none;
+}
+
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: white;
+  padding: 4px;
+  text-align: center;
+  font-family: "sztos-variable", sans-serif;
   font-size: 18px;
-  margin: 0px;
+  font-weight: 80;
 }
 
+
+/* TABLETTES */
 @media screen and (min-width: 480px) {
+
   h1 {
     font-size: 18vw;
     margin-top: 8vw;
@@ -220,7 +197,6 @@ h1 {
   }
 
   .domaine {
-    font-size: medium;
     padding: 10px;
   }
 
@@ -234,21 +210,17 @@ h1 {
     font-size: 13px;
     margin: 0 10px;
   }
-
-  .label {
-    grid-template-columns: 1fr 120px 60px;
-    font-size: 20px;
-    margin: 10px;
-  }
 }
 
-/* Pour les écrans à partir de 768px */
+
+/* TABLETTES GRANDES */
 @media screen and (min-width: 768px) {
+
   h1 {
     font-size: 15vw;
     margin-top: 5vw;
   }
-  
+
   .intro {
     margin-top: 30px;
     font-size: 15px;
@@ -270,17 +242,15 @@ h1 {
 
   .grid {
     grid-template-columns: 1fr 180px 80px;
-    font-size: 14px;
-  }
-
-  .label {
-    grid-template-columns: 1fr 180px 80px;
-    font-size: 25px;
   }
 }
+
+
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
+
   h1 {
-    font-size: 12.0vw;
+    font-size: 12vw;
     margin-top: 3vw;
   }
 
@@ -306,44 +276,4 @@ h1 {
     grid-template-columns: 1fr 220px 100px;
     font-size: 15px;
   }
-
-  .label {
-    grid-template-columns: 1fr 220px 100px;
-    font-size: 30px;
-  }
-}
-.rotating-image {
-  animation: rotate 4s linear infinite;
-  transform-origin: center;
-  width: 50px; height: 50px;
-}
-.footer {
-  text-decoration: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: rgb(255, 255, 255);
-  padding: 4px;
-  text-align: center;
-  font-family: "sztos-variable",sans-serif;
-  font-size: 18px;
-  font-weight: 80;
-}
-img{
-  max-width: 100%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-  
-
-
-}
+}}
