@@ -1,13 +1,11 @@
-@font-face{
-  font-family:"PicNic" ;
-  src: url(webfonts/PicNic.woff2)format("woff2"),
-    url(webfonts/PicNic.woff)format("woff");
 }
 body{
 cursor: url('images/etoileicon-8.png');
 }
 h1{
-  font-family: "PicNic";
+   font-family: "monotalic-narrow", sans-serif;
+font-weight: 700;
+font-style: normal;
     text-align: left;
     font-size: medium;
     margin-top: 3vw;
@@ -16,14 +14,14 @@ h1{
     color: rgb(0, 0, 0);
 }
 .intro{
-  font-family:"sztos-variable",sans-serif;
-    font-variation-settings: 'wght' 200, 'wdth' 200;
+  font-family: "parabolica", sans-serif;
+font-weight: 400;
+font-style: normal;
     text-decoration: none;
     display: grid;
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 10px;
-    font-weight: 450;
     color:  rgb(0, 0, 0);
 }
 
@@ -49,7 +47,7 @@ label.label>*{
 .projets {
   text-align: left;
   padding: 20px;
-  font-family:"sztos-variable",sans-serif;
+  font-family:"parabolica",sans-serif;
   margin: 10px;
   color: rgb(0, 0, 0);
 
@@ -61,7 +59,7 @@ label.label>*{
 .domaine{
   text-align: left;
   padding: 20px;
-  font-family:"sztos-variable",sans-serif;
+  font-family:"parabolica",sans-serif;
   margin: 10px;
   color: rgb(0, 0, 0);
   font-weight:450;
@@ -111,7 +109,7 @@ img{
   display: grid;
   grid-template-columns: 1fr 220px 100px;
   margin: 10px;
-  font-family:"sztos-variable",sans-serif;
+  font-family:"parabolica",sans-serif;
   text-align: left;
   border-bottom: 0.5px solid  rgb(0, 0, 0);
   text-decoration: none;
@@ -129,7 +127,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 220px 100px;
   margin: 10px;
-  font-family: "sztos-variable",sans-serif;
+  font-family: "parabolica",sans-serif;
   text-align: left;
   border-bottom: 0.5px solid rgb(0, 0, 0);
   text-decoration: none;
