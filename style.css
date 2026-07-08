@@ -1,24 +1,29 @@
+@font-face{
+  font-family:"PicNic" ;
+  src: url(webfonts/PicNic.woff2)format("woff2"),
+    url(webfonts/PicNic.woff)format("woff");
+}
 body{
 cursor: url('images/etoileicon-8.png');
 }
 h1{
-  font-family: "monotalic-narrow", sans-serif;
-font-weight: 700;
-font-style: normal;
+  font-family: "PicNic";
+    text-align: left;
+    font-size: medium;
     margin-top: 3vw;
     margin-left: 1px;
     line-height: 0.8;
     color: rgb(0, 0, 0);
 }
 .intro{
-  font-family:"parabolica",sans-serif;
-    font-style: normal;
+  font-family:"sztos-variable",sans-serif;
+    font-variation-settings: 'wght' 200, 'wdth' 200;
     text-decoration: none;
     display: grid;
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 450;
     color:  rgb(0, 0, 0);
 }
 
@@ -44,12 +49,11 @@ label.label>*{
 .projets {
   text-align: left;
   padding: 20px;
-  font-family:"parabolica",sans-serif;
-  font-style: normal;
+  font-family:"sztos-variable",sans-serif;
   margin: 10px;
   color: rgb(0, 0, 0);
 
-  font-weight: 400;
+  font-weight: 450;
   text-wrap:nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -57,11 +61,10 @@ label.label>*{
 .domaine{
   text-align: left;
   padding: 20px;
-  font-family:"parabolica",sans-serif;
-  font-style: normal;
+  font-family:"sztos-variable",sans-serif;
   margin: 10px;
   color: rgb(0, 0, 0);
-  font-weight:400;
+  font-weight:450;
 }
 
 
@@ -70,9 +73,8 @@ label.label>*{
       padding: 20px;
       margin: 10px;
       color: rgb(0, 0, 0);
-      font-weight: 500;
-      font-family: "monotalic", sans-serif;
-      font-style: normal;
+      font-weight: 450;
+      font-family: "PicNic"
   }
   .rotating-image {
     animation: rotate 3s linear infinite;
@@ -109,9 +111,7 @@ img{
   display: grid;
   grid-template-columns: 1fr 220px 100px;
   margin: 10px;
-  font-family:"parabolica",sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family:"sztos-variable",sans-serif;
   text-align: left;
   border-bottom: 0.5px solid  rgb(0, 0, 0);
   text-decoration: none;
@@ -129,9 +129,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 220px 100px;
   margin: 10px;
-  font-family: "parabolica",sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "sztos-variable",sans-serif;
   text-align: left;
   border-bottom: 0.5px solid rgb(0, 0, 0);
   text-decoration: none;
@@ -322,10 +320,9 @@ h1 {
   background: rgb(255, 255, 255);
   padding: 4px;
   text-align: center;
-  font-family: "parabolica",sans-serif;
-  font-style: normal;
+  font-family: "sztos-variable",sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 80;
 }
 img{
   max-width: 100%;
@@ -338,4 +335,7 @@ img{
   to {
     transform: rotate(360deg);
   }
+  
+
+
 }
