@@ -55,7 +55,7 @@ h1 {
 /* PROJETS */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 100px 50px;
+  grid-template-columns: 2fr 150px 50px;
   align-items: center;
   position: relative;
   overflow: hidden;
