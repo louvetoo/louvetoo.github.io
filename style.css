@@ -10,12 +10,12 @@ img {
 /* IMAGE DE FOND FIXE */
 .background-dog {
    position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 280px;
+  bottom: 30px;
+  right: 30px;
+  width: 180px;
   height: auto;
   object-fit: contain;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -86,7 +86,7 @@ h1 {
   opacity: 0;
   object-fit: cover;
   transition: opacity 0.3s;
-  z-index: 0;
+  z-index: 2;
 }
 
 .grid:hover .hover-image {
@@ -95,7 +95,7 @@ h1 {
 
 .grid span {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .projets,
