@@ -13,6 +13,16 @@ font-style: normal;
     line-height: 0.8;
     color: rgb(0, 0, 0);
 }
+.background-dog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -10;
+  pointer-events: none;
+}
 .intro{
   font-family: "parabolica", sans-serif;
 font-weight: 400;
