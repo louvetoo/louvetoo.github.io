@@ -1,6 +1,6 @@
 }
 body{
-cursor: img src="images/etoileicon-8.png";
+cursor: url('images/curseur.svg') 16 16, auto;
 }
 h1{
    font-family: "monotalic-narrow", sans-serif;
